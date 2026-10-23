@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta name="robots" content="noindex, nofollow" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0e1014" />
+    <title>Unexpected · Oyun demoları</title>
+    <style>
+      :root {
+        --bg: #0e1014;
+        --card: #171a21;
+        --line: #262a33;
+        --fg: #f2f0ea;
+        --muted: #9aa0ab;
+        color-scheme: dark;
+      }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; background: var(--bg); color: var(--fg); }
+      body {
+        font: 16px/1.45 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        padding: max(28px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) max(32px, env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
+      }
+      main { max-width: 1040px; margin: 0 auto; display: grid; gap: 28px; }
+      header { display: grid; gap: 8px; }
+      .eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.18em; color: var(--muted); }
+      h1 { margin: 0; font-size: clamp(30px, 7vw, 44px); line-height: 1.05; letter-spacing: -0.01em; text-wrap: balance; }
+      .lead { margin: 0; color: var(--muted); max-width: 60ch; }
+      .badges { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+      .badge { font-size: 12px; font-weight: 700; letter-spacing: 0.04em; padding: 4px 9px; border-radius: 999px; border: 1px solid var(--line); color: var(--fg); }
+      .games { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); }
+      .game {
+        --c: #fff;
+        display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 16px; align-items: center;
+        padding: 14px; border-radius: 18px; background: var(--card); border: 1px solid var(--line);
+        border-top: 3px solid var(--c);
+      }
+      .game img { width: 112px; height: auto; aspect-ratio: 323 / 700; border-radius: 14px; display: block; background: #000; }
+      .game h2 { margin: 0 0 4px; font-size: 22px; line-height: 1.1; }
+      .game p { margin: 0 0 12px; color: var(--muted); font-size: 14.5px; }
+      .play {
+        display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 20px;
+        border-radius: 12px; background: var(--c); color: #111; font-weight: 800; letter-spacing: 0.03em; text-decoration: none;
+      }
+      .play:focus-visible { outline: 3px solid var(--fg); outline-offset: 3px; }
+      .game.is-dk { --c: #ff8a1f; }
+      .game.is-sv { --c: #9bff3c; }
+      .game.is-nk { --c: #ff4f8b; }
+      @media (min-width: 900px) {
+        .games { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+        .game { grid-template-columns: 1fr; align-items: start; }
+        .game img { width: 100%; max-width: 220px; margin: 0 auto; }
+      }
+      footer { color: var(--muted); font-size: 13.5px; display: grid; gap: 4px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <span class="eyebrow">UNEXPECTED</span>
+        <h1>Oyun demoları</h1>
+        <p class="lead">Üç yeni oyun fikrinin oynanabilir demoları. Telefonda dikey tutup oynayabilirsin; masaüstünde de çalışır.</p>
+        <div class="badges"><span class="badge">DEMO KREDİ · GERÇEK PARA YOK</span><span class="badge">18+</span></div>
+      </header>
+
+      <ul class="games">
+        <li class="game is-dk">
+          <img src="img/duvardan-kacis.jpg" alt="Duvardan Kaçış oyun ekranı" width="323" height="700" />
+          <div>
+            <h2>Duvardan Kaçış</h2>
+            <p>Duvarı kır, hücre hücre kaç. Her kat çarpanı büyütür; demir bloğa denk gelirsen bahis yanar.</p>
+            <a class="play" href="duvardan-kacis.html">Oyna</a>
+          </div>
+        </li>
+        <li class="game is-sv">
+          <img src="img/super-vole.jpg" alt="Süper Vole oyun ekranı" width="323" height="700" />
+          <div>
+            <h2>Süper Vole</h2>
+            <p>Ayak tenisi. Pas, vole ya da röveşatayı sen seç, ya da joystick'le koşup topa ikinci sekmeden önce yetiş.</p>
+            <a class="play" href="super-vole.html">Oyna</a>
+          </div>
+        </li>
+        <li class="game is-nk">
+          <img src="img/nakavt.jpg" alt="Nakavt oyun ekranı" width="323" height="700" />
+          <div>
+            <h2>Nakavt</h2>
+            <p>Boks. Yumrukla çarpanı büyüt; rakip son canındayken NAKAVT ET ile maçı bitir, ama rakip her an karşılık verebilir.</p>
+            <a class="play" href="nakavt.html">Oyna</a>
+          </div>
+        </li>
+      </ul>
+
+      <footer>
+        <span>Ses ilk dokunuşta açılır. Sayfayı yenilemek yeni bir ₺10.000 demo oturumu başlatır.</span>
+        <span>Sürüm: 24 Ekim 2026</span>
+      </footer>
+    </main>
+  </body>
+</html>
