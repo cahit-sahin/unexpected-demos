@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "sounds": {
+    "amb.crowd": { "files": ["crowd-loop.mp3"], "volume": 0.9, "loop": true },
+    "loop.heartbeat": { "files": ["heartbeat-loop.mp3"], "volume": 0.8, "loop": true }
+  }
+}
