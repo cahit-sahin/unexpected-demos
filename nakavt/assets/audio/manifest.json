@@ -2,6 +2,31 @@
   "version": 1,
   "sounds": {
     "amb.crowd": { "files": ["crowd-loop.mp3"], "volume": 0.9, "loop": true },
-    "loop.heartbeat": { "files": ["heartbeat-loop.mp3"], "volume": 0.8, "loop": true }
+
+    "sfx.bell": { "files": ["sfx-bell.m4a"], "volume": 0.9 },
+    "sfx.bell3": { "files": ["sfx-bell3.m4a"], "volume": 0.9 },
+    "sfx.jab": { "files": ["sfx-punch-light.m4a"], "volume": 1 },
+    "sfx.hook": { "files": ["sfx-punch-heavy.m4a"], "volume": 1 },
+    "sfx.uppercut": { "files": ["sfx-punch-heavy.m4a"], "volume": 1 },
+    "sfx.whiff": { "files": ["sfx-whoosh.m4a"], "volume": 0.8 },
+    "sfx.counter": { "files": ["sfx-counter.m4a"], "volume": 1 },
+    "sfx.ko": { "files": ["sfx-body-fall.m4a"], "volume": 1 },
+    "sfx.crowd.ooh": { "files": ["sfx-ooo.m4a"], "volume": 0.8 },
+    "sfx.crowd.cheer": { "files": ["sfx-cheer.m4a"], "volume": 0.8 },
+    "sfx.cashout": { "files": ["sfx-coin.m4a"], "volume": 0.9 },
+    "sfx.bigwin": { "files": ["sfx-fanfare.m4a"], "volume": 0.9 },
+    "ui.click": { "files": ["sfx-click.m4a"], "volume": 0.7 },
+    "ui.select": { "files": ["sfx-click.m4a"], "volume": 0.8 },
+
+    "vo.dovus": { "files": ["vo-dovus.m4a"], "volume": 1.2 },
+    "vo.nakavt": { "files": ["vo-nakavt.m4a"], "volume": 1.2 },
+    "vo.parayi_aldin": { "files": ["vo-parayi_aldin.m4a"], "volume": 1.2 },
+    "vo.buyuk_kazanc": { "files": ["vo-buyuk_kazanc.m4a"], "volume": 1.2 },
+    "vo.mega_kazanc": { "files": ["vo-mega_kazanc.m4a"], "volume": 1.2 },
+    "vo.efsane": { "files": ["vo-efsane.m4a"], "volume": 1.2 },
+    "vo.demir": { "files": ["vo-demir.m4a"], "volume": 1.2 },
+    "vo.yildirim": { "files": ["vo-yildirim.m4a"], "volume": 1.2 },
+    "vo.kralice": { "files": ["vo-kralice.m4a"], "volume": 1.2 },
+    "vo.firtina": { "files": ["vo-firtina.m4a"], "volume": 1.2 }
   }
 }
